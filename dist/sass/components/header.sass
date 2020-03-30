@@ -1,0 +1,88 @@
+header
+  background: $white
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  right: 0
+
+.header-wrapper
+  width: 100%
+  height: 50px
+  box-shadow: 0 3px 5px 0 $mainYellow
+
+.header-container
+  max-width: $baseWidth
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__logo
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 50px
+  height: 50px
+
+  a
+    display: block
+    width: 50px
+    height: auto
+
+  img
+    width: 100%
+    height: auto
+    display: block
+
+.header__menu
+  height: 100%
+  display: flex
+  align-items: center
+  padding-right: 5px
+
+.header__menu-list
+  display: flex
+  height: 100%
+  justify-content: space-between
+  align-items: center
+  position: relative
+
+  li
+    height: 100%
+    margin-right: 20px
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      height: 2px
+      width: 0
+      bottom: -5px
+      background-color: $lightYellow
+      transition: width .4s ease
+
+    &:last-child
+      margin-right: 0
+
+    &:hover
+      &:after
+        width: 100%
+
+  a
+    text-decoration: none
+    font-weight: $medium
+    font-size: 16px
+    display: block
+    color: $graphite
+    transition: color .3s ease
+
+.header__menu-list .active a
+  color: $darkYellow
+
+@media only screen and (max-width: 768px)
+  .header__logo
+    a
+      width: 40px
+  .header__menu
+    margin-right: 15px
