@@ -32,7 +32,6 @@ gulp.task('scripts', function() {
     return gulp.src([
             'dist/js/jquery.js',
             'dist/js/mask.js',
-            'dist/js/owl.carousel.js',
             'dist/js/particles.js',
             'dist/js/index.js'
         ])

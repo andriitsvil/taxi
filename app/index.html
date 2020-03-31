@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Номер дешёвого такси ✈ 7778 ✈ Такси в Украине 7778 ✈ Такси в Аэропорт✈ Быстрая подача автомобиля✈ Приложение такси онлайн ✈ Стоимость такси ✈ Работа в Киеве"/>
+    <meta name="description"
+          content="Номер дешёвого такси ✈ 7778 ✈ Такси в Украине 7778 ✈ Такси в Аэропорт✈ Быстрая подача автомобиля✈ Приложение такси онлайн ✈ Стоимость такси ✈ Работа в Киеве"/>
     <meta property="og:title" content="Такси в Украине 7778">
     <meta property="og:type" content="website">
     <meta property="og:image" content="">
     <meta property="og:image:width" content="">
     <meta property="og:image:height" content="">
-    <meta property="og:description" content="Номер дешёвого такси ✈ 7778 ✈ Такси в Украине 7778 ✈ Такси в Аэропорт✈ Быстрая подача автомобиля✈ Приложение такси онлайн ✈ Стоимость такси ✈ Работа в Киеве">
+    <meta property="og:description"
+          content="Номер дешёвого такси ✈ 7778 ✈ Такси в Украине 7778 ✈ Такси в Аэропорт✈ Быстрая подача автомобиля✈ Приложение такси онлайн ✈ Стоимость такси ✈ Работа в Киеве">
     <meta name="theme-color" content="#fedd58">
     <meta name=twitter:card content=summary/>
     <meta name=twitter:domain content="Номер такси  7778"/>
@@ -30,6 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/index.min.css">
 </head>
@@ -55,17 +58,24 @@
 <main>
     <section id="main" class="home-first-screen">
         <div class="home-first-screen__wrapper">
-            <div class="home-first-screen__block" style="background: red;"></div>
-            <div class="home-first-screen__block" style="background: blue;"></div>
-            <div class="home-first-screen__block" style="background: green;"></div>
-            <div class="home-first-screen__block" style="background: yellow;"></div>
+            <div class="home-first-screen__block" style="background-image: url('img/taxiAudi.jpg');"></div>
+            <div class="home-first-screen__block" style="background-image: url('img/taxiFiat.jpg');"></div>
+            <div class="home-first-screen__block" style="background-image: url('img/taxiFiat.jpg');"></div>
+            <div class="home-first-screen__block" style="background-image: url('img/taxiAudi.jpg');"></div>
         </div>
     </section>
-  <section id="work" class="home-second-screen"></section>
-  <section id="contacts" class="home-third-screen"></section>
+    <section id="work" class="home-second-screen"></section>
+    <section id="contacts" class="home-third-screen">
+        <!--        <i class="fab fa-viber"></i>-->
+    </section>
+    <a href="tel:7778" id="callbackButton" class="callback__button" target="_blank">
+        <i class="fas fa-phone"></i>
+    </a>
 </main>
 <footer>
-
+    <div class="footer-container">
+        <span class="footer_copyright">© TAXI UKRAINE<br><span id="currentDate"></span></span>
+    </div>
 </footer>
 <script src="js/index.min.js"></script>
 </body>
